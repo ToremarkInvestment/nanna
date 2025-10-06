@@ -89,7 +89,7 @@
       /* Avdelarlinjen följer containerns sidmarginaler (matchar bilderna) */
       section::after {
         content: "";
-        position: solute;
+        position: absolute;
         left: var(--side-pad);
         right: var(--side-pad);
         bottom: 0;
@@ -156,7 +156,7 @@
       .hamburger::before,
       .hamburger::after {
         content: "";
-        position: solute;
+        position: absolute;
         left: 8px;
         right: 8px;
         height: 2px;
@@ -252,7 +252,7 @@
         object-fit: cover;
       }
       .hero-overlay {
-        position: solute;
+        position: absolute;
         inset: 0;
         display: flex;
         align-items: center;
@@ -300,11 +300,11 @@
         .section-grid {
           grid-template-columns: 1.07fr 0.93fr;
         }
-        .out-grid .text {
+        .about-grid .text {
           order: 1;
           padding-right: 2.5%;
         }
-        .out-grid .media {
+        .about-grid .media {
           order: 2;
         }
         .philo-grid .media {
@@ -331,19 +331,19 @@
       }
 
       /* Typografi */
-      #out .out-title {
+      #about .about-title {
         font-size: var(--headline-size);
         line-height: 1.1;
-        margin-top: var(--out-top-gap);
+        margin-top: var(--about-top-gap);
         margin-bottom: 12px;
       }
-      #out .out-title span {
+      #about .about-title span {
         display: block;
       }
-      #out .out-lead {
+      #about .about-lead {
         font-size: var(--lead-size);
         max-width: 80ch;
-        margin-bottom: var(--out-lead-bottom);
+        margin-bottom: var(--about-lead-bottom);
       }
       .section-title {
         font-size: clamp(28px, 5vw, 48px);
@@ -442,8 +442,8 @@
           margin-left: auto;
         }
 
-        /* Ta bort extra toppgap över "out" så den matchar andra rubriker */
-        #out .out-title {
+        /* Ta bort extra toppgap över "About" så den matchar andra rubriker */
+        #about .about-title {
           margin-top: 0;
         }
 
